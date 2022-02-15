@@ -1,0 +1,157 @@
+:root {
+  --vermelho: #e50914;
+  --preta: #141414;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*header*/
+
+header .container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header .logo {
+  color: var(--vermelho);
+  font-family: 'Arial Black', Times;
+  font-size: 40px;
+  margin-left: 7px;
+  cursor: pointer;
+}
+
+header nav a {
+  text-decoration: none;
+  color: #aaa;
+  margin-right: 15px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
+  font-weight: bolder;
+}
+
+header nav a:hover {
+  color: white;
+}
+
+body {
+  background: var(--preta);
+  font-family: 'Times New Roman', Times, Serif;
+  color: white;
+}
+
+/*filme principal*/
+
+.filme-principal {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
+
+  font-size: 16px;
+  background: linear-gradient(
+      110deg,
+      rgba(0, 0, 0, 0.4374124649859944) 48%,
+      rgba(255, 255, 255, 0.47942927170868344) 100%
+    ),
+    url('../img/homem-aranha2.jpg') no-repeat center;
+
+  height: 400px;
+  background-size: cover;
+  height: 100%;
+}
+
+.filme-principal .descricao {
+  margin-bottom: 15px;
+  margin-left: 20px;
+}
+
+.titulo {
+  font-size: 40px;
+  margin-bottom: 20px;
+  margin-top: 15%;
+  margin-left: 20px;
+}
+
+.botao {
+  background-color: RGBA(0, 0, 0, 0.51);
+  color: white;
+  border: none;
+  padding: 5px 40px;
+  margin-right: 15px;
+  cursor: pointer;
+  margin-left: 20px;
+  transition: 0.3s ease all;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
+}
+
+.botao:hover {
+  background-color: whitesmoke;
+  color: black;
+}
+
+.botao span {
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+}
+
+.lancamentos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 115px;
+  margin-bottom: 60px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
+}
+
+/* carrousel */
+
+.box-filme {
+  height: 100%;
+  width: 100%;
+  display: block;
+  cursor: pointer;
+  margin-top: 30px;
+  image-rendering: no-repeat center;
+}
+
+/*footer*/
+
+footer p {
+  display: flex;
+  height: 50px;
+  width: 100%;
+  background: var(--preta);
+  justify-content: center;
+  font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+}
+
+ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+}
+
+li {
+  padding: 30px;
+  margin: 15px;
+  cursor: pointer;
+}
+
+.linha {
+  background-color: #aaa;
+  height: 1px;
+  margin-top: 5px;
+}
